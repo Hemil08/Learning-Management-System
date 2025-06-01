@@ -5,6 +5,7 @@ import { login } from "../../utils/auth";
 import BaseHeader from "../partials/BaseHeader";
 import BaseFooter from "../partials/BaseFooter";
 import { Link, useNavigate } from "react-router-dom";
+import Toast from "../plugin/Toast";
 
 function Login() {
   const [email, setEmail] = useState("");
@@ -22,6 +23,10 @@ function Login() {
       alert(error);
     } else {
       navigate("/");
+       Toast().fire({
+        icon: "success",
+        title: "login Successful",
+      });
       setIsLoading(false);
     }
   };

@@ -15,7 +15,7 @@ function Orders() {
     const [orders, setOrders] = useState([]);
 
     useEffect(() => {
-        useAxios.get(`teacher/course-order-list/${UserData()?.teacher_id}/`).then((res) => {
+        useAxios.get(`teacher/course-order-list/${teacherId}/`).then((res) => {
             console.log(res.data);
             setOrders(res.data);
         });

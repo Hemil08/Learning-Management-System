@@ -12,12 +12,13 @@ import BaseFooter from "../partials/BaseFooter";
 import useAxios from "../../utils/useAxios";
 import UserData from "../plugin/UserData";
 import Toast from "../plugin/Toast";
+import { teacherId } from "../../utils/constants";
 
 function TeacherNotification() {
     const [noti, setNoti] = useState([]);
 
     const fetchNoti = () => {
-        useAxios.get(`teacher/noti-list/${UserData()?.teacher_id}/`).then((res) => {
+        useAxios.get(`teacher/noti-list/${teacherId}/`).then((res) => {
             setNoti(res.data);
             console.log(res.data);
         });
@@ -30,11 +31,11 @@ function TeacherNotification() {
     const handleMarkAsSeen = (notiId) => {
         const formdata = new FormData();
 
-        formdata.append("teacher", UserData()?.teacher_id);
+        formdata.append("teacher", teacherId);
         formdata.append("pk", notiId);
         formdata.append("seen", true);
 
-        useAxios.patch(`teacher/noti-detail/${UserData()?.teacher_id}/${notiId}`, formdata).then((res) => {
+        useAxios.patch(`teacher/noti-detail/${teacherId}/${notiId}`, formdata).then((res) => {
             console.log(res.data);
             fetchNoti();
             Toast().fire({

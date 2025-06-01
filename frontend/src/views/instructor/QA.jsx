@@ -10,6 +10,7 @@ import { Link } from "react-router-dom";
 
 import useAxios from "../../utils/useAxios";
 import UserData from "../plugin/UserData";
+import { teacherId } from "../../utils/constants";
 
 function QA() {
     const [questions, setQuestions] = useState([]);
@@ -21,7 +22,7 @@ function QA() {
     });
 
     const fetchQuestions = async () => {
-        useAxios.get(`teacher/question-answer-list/${UserData()?.teacher_id}/`).then((res) => {
+        useAxios.get(`teacher/question-answer-list/${teacherId}/`).then((res) => {
             console.log(res.data);
             setQuestions(res.data);
         });
@@ -44,7 +45,7 @@ function QA() {
             [event.target.name]: event.target.value,
         });
     };
-    console.log(selectedConversation.course);
+    // console.log(selectedConversation.course);
     const sendNewMessage = async (e) => {
         e.preventDefault();
         const formdata = new FormData();

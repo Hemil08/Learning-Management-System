@@ -7,6 +7,8 @@ import { register } from "../../utils/auth";
 import BaseHeader from "../partials/BaseHeader";
 import BaseFooter from "../partials/BaseFooter";
 
+import Toast from "../plugin/Toast";
+
 function Register() {
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
@@ -26,7 +28,11 @@ function Register() {
       setIsLoading(false);
     } else {
       navigate("/");
-      alert("Registration Successfull, you have now been logged in");
+      // alert("Registration Successfull, you have now been logged in");
+      Toast().fire({
+        icon: "success",
+        title: "Registration Successfull, you have now been logged in",
+      });
       setIsLoading(false);
     }
   };

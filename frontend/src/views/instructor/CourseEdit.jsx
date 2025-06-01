@@ -13,6 +13,7 @@ import useAxios from "../../utils/useAxios";
 import UserData from "../plugin/UserData";
 import Swal from "sweetalert2";
 import Toast from "../plugin/Toast";
+import { teacherId } from "../../utils/constants";
 
 function CourseEdit() {
     const [courseData, setCourseData] = useState({});
@@ -106,12 +107,11 @@ function CourseEdit() {
             category: courseData?.category,
         };
 
-        const response = await useAxios.post(`teacher/course-create/`, json);
-        console.log(response.data);
-        navigate(`/instructor/edit-course/${response?.data?.course_id}/`);
+        const response = await useAxios.put(`teacher/course-update/${teacherId}/${param.course_id}/`, json);
+        navigate(`/instructor/courses/`);
         Swal.fire({
             icon: "success",
-            title: "Course Created Successfully",
+            title: "Course Updated Successfully",
         });
     };
 

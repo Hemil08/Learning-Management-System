@@ -8,13 +8,14 @@ import BaseFooter from "../partials/BaseFooter";
 
 import useAxios from "../../utils/useAxios";
 import UserData from "../plugin/UserData";
+import { teacherId } from "../../utils/constants";
 
 function Dashboard() {
     const [stats, setStats] = useState([]);
     const [courses, setCourses] = useState([]);
 
     const fetchCourseData = () => {
-        useAxios.get(`teacher/summary/${UserData()?.teacher_id}/`).then((res) => {
+        useAxios.get(`teacher/summary/${teacherId}/`).then((res) => {
             console.log(res.data[0]);
             setStats(res.data[0]);
         });

@@ -3,10 +3,15 @@ import BaseHeader from "../partials/BaseHeader";
 import BaseFooter from "../partials/BaseFooter";
 import { logout } from "../../utils/auth";
 import { Link } from "react-router-dom";
+import Toast from "../plugin/Toast";
 
 function Logout() {
   useEffect(() => {
     logout();
+    Toast().fire({
+        icon: "success",
+        title: "Logout Successful",
+      });
   }, []);
 
   return (

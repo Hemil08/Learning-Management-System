@@ -8,12 +8,13 @@ import BaseFooter from "../partials/BaseFooter";
 
 import useAxios from "../../utils/useAxios";
 import UserData from "../plugin/UserData";
+import { teacherId } from "../../utils/constants";
 
 function Students() {
     const [student, setStudents] = useState([]);
 
     useEffect(() => {
-        useAxios.get(`teacher/student-lists/${UserData()?.teacher_id}/`).then((res) => {
+        useAxios.get(`teacher/student-lists/${teacherId}/`).then((res) => {
             console.log("res.data: ", res.data);
             setStudents(res.data);
         });

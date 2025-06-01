@@ -33,7 +33,7 @@ function Coupon() {
     const handleAddCouponShow = () => setShowAddCoupon(true);
 
     const fetchCoupons = () => {
-        useAxios.get(`teacher/coupon-list/${UserData()?.teacher_id}/`).then((res) => {
+        useAxios.get(`teacher/coupon-list/${teacherId}/`).then((res) => {
             console.log(res.data);
             setCoupons(res.data);
         });
