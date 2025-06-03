@@ -93,7 +93,11 @@ Stored in local storage and attached via Axios interceptors.
 
 
 📸 Screenshots
-(Add screenshots or GIFs here if you have them)
+
+-> Registration page
+![image](https://github.com/user-attachments/assets/fc1eb683-f55f-456b-981f-636de1ae4999)
+
+
 
 📌 Future Improvements
 🧪 Testing
