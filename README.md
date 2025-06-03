@@ -53,10 +53,11 @@ This project allows instructors to create courses, manage content, and track stu
 -> Forgot Password Page
 ![image](https://github.com/user-attachments/assets/796edd6e-74f4-4a1f-b6af-6ca34aed7603)
 
+-> Reset Password Email 
+![image](https://github.com/user-attachments/assets/b146900d-811b-4827-b2d5-7301c43d7ea7)
 
-
-
-
+-> Create New Password Page
+![image](https://github.com/user-attachments/assets/0539a6a0-19d8-441c-a414-e626445bad79)
 
 
 ## 📂 Project Structure
