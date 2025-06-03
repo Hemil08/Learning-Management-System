@@ -39,6 +39,26 @@ This project allows instructors to create courses, manage content, and track stu
 - PostgreSQL / SQLite (configurable)
 - JWT Authentication
 
+📸 Screenshots
+
+-> Registration page
+![image](https://github.com/user-attachments/assets/fc1eb683-f55f-456b-981f-636de1ae4999)
+
+->Login Page
+![image](https://github.com/user-attachments/assets/a8e28123-314b-4026-911e-2650e3ba0eb6)
+
+->Logout Page
+![image](https://github.com/user-attachments/assets/ef0bd7d3-3924-48f1-89ad-215f0c429775)
+
+-> Forgot Password Page
+![image](https://github.com/user-attachments/assets/796edd6e-74f4-4a1f-b6af-6ca34aed7603)
+
+
+
+
+
+
+
 ## 📂 Project Structure
 
 lms-project/
@@ -90,14 +110,6 @@ Ensure backend is running on http://localhost:8000 and frontend on http://localh
 JWT tokens are used for API authentication.
 
 Stored in local storage and attached via Axios interceptors.
-
-
-📸 Screenshots
-
--> Registration page
-![image](https://github.com/user-attachments/assets/fc1eb683-f55f-456b-981f-636de1ae4999)
-
-
 
 📌 Future Improvements
 🧪 Testing
