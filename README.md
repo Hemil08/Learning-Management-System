@@ -3,6 +3,13 @@
 A full-stack Learning Management System built using **Django** for the backend and **React** for the frontend. 
 This project allows instructors to create courses, manage content, and track student progress, while students can browse, enroll, and engage in courses.
 
+## Deployment
+
+Frontend :- https://gleaming-arithmetic-7ca593.netlify.app/
+
+backend :- https://mycode-lms-api.up.railway.app/
+
+Admin Panel :- https://mycode-lms-api.up.railway.app/admin
 
 ## 🚀 Features
 
