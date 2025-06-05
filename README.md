@@ -1,4 +1,4 @@
-# Learning Management System (LMS) - Django & React
+# Learning Management System (LMS) - Django & React & SQL (PostgreSQL) & AWS
 
 A full-stack Learning Management System built using **Django** for the backend and **React** for the frontend. 
 This project allows instructors to create courses, manage content, and track student progress, while students can browse, enroll, and engage in courses.
