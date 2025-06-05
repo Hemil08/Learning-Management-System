@@ -46,6 +46,109 @@ Admin Panel :- https://mycode-lms-api.up.railway.app/admin
 - PostgreSQL / SQLite (configurable)
 - JWT Authentication
 
+##Updated Requirements
+🔹 User Roles and Permissions
+1.Admin
+
+Manage all users (students, instructors)
+
+Approve or reject courses
+
+Access platform-wide analytics
+
+2. Instructor
+
+Register and log in securely
+
+Create, update, and delete courses
+
+Upload video content and course materials
+
+Monitor enrolled students
+
+View course analytics (views, enrollments)
+
+3. Student
+
+Register and log in securely
+
+Browse and search for available courses
+
+Enroll in free or paid courses
+
+Stream video lessons
+
+Track course progress
+
+Add reviews or comments (if implemented)
+
+🔹 Functional Requirements
+
+1. Authentication & Authorization
+
+JWT-based login and registration
+
+Role-based access control (RBAC)
+
+2. Course Management
+
+Create, edit, and delete courses (instructors)
+
+List courses publicly for browsing (students)
+
+3. Video Upload and Streaming
+
+Upload videos via instructor dashboard
+
+Video streaming for students with secure access
+
+4. Enrollment System
+
+Allow students to enroll in courses
+
+Prevent duplicate enrollments
+
+5. Dashboard Features
+
+Separate dashboards for instructors and students
+
+Overview of courses, progress, and stats
+
+6. API Integration
+
+Backend exposed via Django REST Framework
+
+Frontend consumes APIs using Axios
+
+🔹 Non-Functional Requirements
+Responsive Design
+
+Accessible on desktop, tablet, and mobile
+
+Scalability
+
+Modular backend (Django apps)
+
+Component-based frontend (React)
+
+Security
+
+Token-based authentication (JWT)
+
+API route protection
+
+Performance
+
+Optimized frontend rendering with React
+
+Lazy loading of components where possible
+
+Maintainability
+
+Clean project structure with version control (Git)
+
+Clear API contracts and code comments
+
 📸 Screenshots
 
 -> Registration page
