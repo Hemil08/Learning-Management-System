@@ -25,7 +25,6 @@ Admin Panel :- https://mycode-lms-api.up.railway.app/admin
 - Enroll in courses
 - Watch lessons and track progress
 - Payment Integration
-  
 - email integration
 
 ### Admin Side:
