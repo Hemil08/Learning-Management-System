@@ -37,12 +37,12 @@ Admin Panel :- https://mycode-lms-api.up.railway.app/admin
 - React
 - React Router
 - Axios
-- Bootstrap / Tailwind CSS (depends on implementation)
+- Bootstrap 
 
 **Backend:**
 - Django
 - Django REST Framework (DRF)
-- PostgreSQL / SQLite (configurable)
+- PostgreSQL
 - JWT Authentication
 
 ##Updated Requirements
